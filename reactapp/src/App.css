@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+body {
+  background-color: #212429;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.App-name {
+  padding-left: 3rem;
+  padding-top: 2rem;
+  margin: 0px;
+  justify-content: baseline;
+  justify-self: baseline;
+  margin-bottom: 0.5rem;
+  font-size: xxx-large;
+  width: auto;
+  /* color:rgb(165, 165, 198); */
+  background-image: linear-gradient(to top, rgb(151, 131, 195) 0%, #f9f3ff 100%);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Movie list display ============================ */
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.MovieList {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
+  width: auto;
+  padding-left: 1.5rem;
+  padding-bottom: 2rem;
+}
+
+
+/* Movie cards =================================== */
+
+.MovieItem {
+  margin: 1.55rem;
+  width: 300px;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgb(165, 165, 198);
+  border-radius: 0.5rem;
 }
 
-.App-link {
-  color: #61dafb;
+.MoviePhoto {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.SubItem {
+  margin: 1rem;
+  padding-left: 0.5rem;
 }
+
+.PlayIcon {
+  height: 30px;
+}
+
+.PlayIcon:hover {
+  color: rgb(86, 76, 107)
+}
+
+.AddButton {
+  background-color: rgb(144, 144, 181);
+  padding: 0.3rem;
+  font-size: smaller;
+  margin: auto;
+  margin-left: 0;
+  outline-color:#212429;
+  outline-style:solid;
+}
+
+.AddButton:hover {
+  color: rgb(192, 188, 231);
+  outline-color: rgb(86, 76, 107);
+  /* background-color: rgb(126, 117, 146) */
+}
+
+.Buttons {
+  display: flex;
+  gap: 1rem;
+  padding-bottom: 0.5rem;
+  padding-left: 0.5rem;
+  align-items: left;
+}
+

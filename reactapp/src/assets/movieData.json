@@ -1,0 +1,86 @@
+[
+    {
+        "name": "Mean Girls",
+        "genre": "Comedy",
+        "rating": "7.1",
+        "watchTime": 97,
+        "image": "images/meangirls.jpg"
+    },
+    {
+        "name": "Interstellar",
+        "genre": "Action",
+        "rating": "8.7",
+        "watchTime": 169,
+        "image": "images/interstellar.png"
+    },
+    {
+        "name": "Mean Girls 2",
+        "genre": "Comedy",
+        "rating": "4.1",
+        "watchTime": 97,
+        "image": "images/meangirls2.jpg"
+    },
+    {
+        "name": "The Notebook",
+        "genre": "Romance",
+        "rating": "7.8",
+        "watchTime": 121,
+        "image": "images/notebook.jpg"
+    },
+    {
+        "name": "Cinderella",
+        "genre": "Animation",
+        "rating": "7.3",
+        "watchTime": 97,
+        "image": "images/cinderella.jpg"
+    },
+    {
+        "name": "Frozen",
+        "genre": "Animation",
+        "rating": "7.4",
+        "watchTime": 108,
+        "image": "images/frozen.jpg"
+    },
+    {
+        "name": "Marry Poppins",
+        "genre": "Fantasy",
+        "rating": "7.8",
+        "watchTime": 139,
+        "image": "images/marrypoppins.png"
+    },
+    {
+        "name": "The Sixth Sense",
+        "genre": "Horror",
+        "rating": "8.2",
+        "watchTime": 107,
+        "image": "images/sixthsense.jpg"
+    },
+    {
+        "name": "Iron Man",
+        "genre": "Action",
+        "rating": "7.9",
+        "watchTime": 126,
+        "image": "images/ironman.jpg"
+    },
+    {
+        "name": "The Avengers",
+        "genre": "Action",
+        "rating": "8",
+        "watchTime": 143,
+        "image": "images/avengers.jpg"
+    },
+    {
+        "name": "Twilight",
+        "genre": "Romance",
+        "rating": "5.3",
+        "watchTime": 122,
+        "image": "images/twilight.jpg"
+    },
+    {
+        "name": "Rocky",
+        "genre": "Action",
+        "rating": "8.1",
+        "watchTime": 119,
+        "image": "images/rocky.jpg"
+    }
+]
