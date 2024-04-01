@@ -3,7 +3,7 @@ body {
   font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-.App-name {
+.app-name {
   padding-left: 3rem;
   padding-top: 2rem;
   margin: 0px;
@@ -23,7 +23,7 @@ body {
 
 /* Movie list display ============================ */
 
-.MovieList {
+.movie-list {
   display: flex;
   flex-wrap: wrap;
   width: auto;
@@ -34,35 +34,36 @@ body {
 
 /* Movie cards =================================== */
 
-.MovieItem {
+.movie-item {
   margin: 1.55rem;
-  width: 300px;
+  width: clamp(225px, 25%, 260px);
+  height: 360px;
   justify-content: center;
-  background-color: rgb(165, 165, 198);
+  background-color: rgb(182, 182, 210);
   border-radius: 0.5rem;
 }
 
-.MoviePhoto {
+.movie-photo {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 0.5rem;
 }
 
-.SubItem {
+.sub-item {
   margin: 1rem;
   padding-left: 0.5rem;
 }
 
-.PlayIcon {
+.play-icon {
   height: 30px;
 }
 
-.PlayIcon:hover {
+.play-icon:hover {
   color: rgb(86, 76, 107)
 }
 
-.AddButton {
+.add-button {
   background-color: rgb(144, 144, 181);
   padding: 0.3rem;
   font-size: smaller;
@@ -72,13 +73,13 @@ body {
   outline-style:solid;
 }
 
-.AddButton:hover {
+.add-button:hover {
   color: rgb(192, 188, 231);
   outline-color: rgb(86, 76, 107);
-  /* background-color: rgb(126, 117, 146) */
+  background-color: rgb(126, 117, 146)
 }
 
-.Buttons {
+.buttons {
   display: flex;
   gap: 1rem;
   padding-bottom: 0.5rem;
@@ -86,3 +87,27 @@ body {
   align-items: left;
 }
 
+/* Page content display (movies and filter boxes) =================================== */
+
+.page-content {
+  display: grid;
+  grid-template-columns: 80% 20%;
+  margin-right: 3.5rem;
+}
+
+/* Filter section ================================================ */
+
+.filter-section {
+  color: white;
+  width: 100%;
+}
+
+.filter-box {
+  background-color: rgb(182, 182, 210);
+  color: black;
+  padding-left: 1.5rem;
+  padding-top: 0.5rem;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  width: clamp(200px, 92%, 400px);
+}

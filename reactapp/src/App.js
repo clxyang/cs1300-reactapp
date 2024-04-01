@@ -1,11 +1,11 @@
 import './App.css';
 import { useEffect, useState } from "react";
 import movieData from "./assets/movieData.json";
-import { DisplayList } from "./components/DisplayList";
 import { MovieCard } from "./components/MovieCard";
+import { Filter } from './components/FilterBox';
 
 function App() { 
-
+  const [allMovies] = useState(movieData);
   const [favorites, setFavorites] = useState([]);
 
   const addFavorite = (movie) => {
@@ -24,27 +24,14 @@ function App() {
     setFavorites(removedList);
   };
 
-  const showItems = () => {
-    return movieData.map((item, index) => ( 
-      <MovieCard item={item} name={item.name} genre={item.genre} rating={item.rating}
-        watchTime={item.watchTime} image={item.image} addFav={addFavorite}></MovieCard>
-    ))
-  }
-
   return (
     <div className="App">
-      <h1 className="App-name">
+      <h1 className="app-name">
         Streamify
       </h1>
+      <Filter allMovies={allMovies} onClick={addFavorite}></Filter>
 
-      <div className="PageContent">
-        <div className="MovieList">
-          {showItems()}
-        </div>
-        <div className="FilterSection">
 
-        </div>
-      </div>
     </div>
   );
 }

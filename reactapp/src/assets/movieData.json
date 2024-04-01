@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "Mean Girls",
         "genre": "Comedy",
         "rating": "7.1",
@@ -7,6 +8,7 @@
         "image": "images/meangirls.jpg"
     },
     {
+        "id": 2,
         "name": "Interstellar",
         "genre": "Action",
         "rating": "8.7",
@@ -14,6 +16,7 @@
         "image": "images/interstellar.png"
     },
     {
+        "id": 3,
         "name": "Mean Girls 2",
         "genre": "Comedy",
         "rating": "4.1",
@@ -21,6 +24,7 @@
         "image": "images/meangirls2.jpg"
     },
     {
+        "id": 4,
         "name": "The Notebook",
         "genre": "Romance",
         "rating": "7.8",
@@ -28,6 +32,7 @@
         "image": "images/notebook.jpg"
     },
     {
+        "id": 5,
         "name": "Cinderella",
         "genre": "Animation",
         "rating": "7.3",
@@ -35,6 +40,7 @@
         "image": "images/cinderella.jpg"
     },
     {
+        "id": 6,
         "name": "Frozen",
         "genre": "Animation",
         "rating": "7.4",
@@ -42,6 +48,7 @@
         "image": "images/frozen.jpg"
     },
     {
+        "id": 7,
         "name": "Marry Poppins",
         "genre": "Fantasy",
         "rating": "7.8",
@@ -49,6 +56,7 @@
         "image": "images/marrypoppins.png"
     },
     {
+        "id": 8,
         "name": "The Sixth Sense",
         "genre": "Horror",
         "rating": "8.2",
@@ -56,6 +64,7 @@
         "image": "images/sixthsense.jpg"
     },
     {
+        "id": 9,
         "name": "Iron Man",
         "genre": "Action",
         "rating": "7.9",
@@ -63,6 +72,7 @@
         "image": "images/ironman.jpg"
     },
     {
+        "id": 10,
         "name": "The Avengers",
         "genre": "Action",
         "rating": "8",
@@ -70,6 +80,7 @@
         "image": "images/avengers.jpg"
     },
     {
+        "id": 11,
         "name": "Twilight",
         "genre": "Romance",
         "rating": "5.3",
@@ -77,6 +88,7 @@
         "image": "images/twilight.jpg"
     },
     {
+        "id": 12,
         "name": "Rocky",
         "genre": "Action",
         "rating": "8.1",
