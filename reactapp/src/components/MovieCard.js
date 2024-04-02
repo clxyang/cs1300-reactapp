@@ -21,6 +21,7 @@ export function MovieCard( { item, favorites, toggleFav } ) {
         <img className="movie-photo" src={item.image}></img>
         <div className="text-overlay">
           <h3> {item.name} </h3>
+          <p> {Math.floor(item.watchTime/60)}hr {item.watchTime - Math.floor(item.watchTime/60)*60}min </p>
         </div>
       </div>
       <div className="bottom-items">
