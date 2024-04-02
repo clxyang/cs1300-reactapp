@@ -2,9 +2,7 @@ import { useEffect, useState } from "react";
 import { MovieCard } from "./MovieCard";
 
 
-export function Filter( { allMovies, handleFav } ) {
-
-    const [filteredMovies, setFilteredMovies] = useState([]);
+export function Filter( { allMovies, toggleFav, filteredMovies, setFilteredMovies, favorites } ) {
 
     const [actionSelected, setAction] = useState(false);
     const [animationSelected, setAnimation] = useState(false);
@@ -94,7 +92,7 @@ export function Filter( { allMovies, handleFav } ) {
             {/* MOVIE CARD DISPLAY */}
             <div className="movie-list">
                 {filteredMovies.map(movie => (
-                    <MovieCard key={movie.id} item={movie} isFavorited={movie.isFavorited} handleFav={handleFav}/>
+                    <MovieCard key={movie.id} item={movie} favorites={favorites} toggleFav={toggleFav}/>
                 ))}
             </div>
 

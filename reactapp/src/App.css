@@ -39,7 +39,7 @@ body {
   margin: 1.25rem;
   margin-right: 0.5rem;
   width: clamp(225px, 25%, 260px);
-  height: 250px;
+  height: 230px;
   background-color: rgb(182, 182, 210);
   border-radius: 0.2rem;
 }
@@ -67,46 +67,43 @@ body {
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
+  font-size:large;
 }
 
 .sub-item {
-  margin: 1rem;
-  margin-bottom: -1rem;
   padding-left: 0.3rem;
+  margin-bottom: 0;
+  margin-top: 0.3rem;
 }
 
-.play-icon {
-  height: 30px;
+.bottom-items {
+  background-color: rgb(182, 182, 210);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding-left: 0.3rem;
+  margin-left: 1rem;
+  margin-top: 0.7rem;
+  padding-left: 0.3rem;
+  align-items: center;
+  justify-items: center;
+  gap: 4rem;
 }
 
-.play-icon:hover {
+.button-saved {
+  height: 25px;
+}
+
+.button-saved:hover {
   color: rgb(86, 76, 107)
 }
 
-.add-button {
-  background-color: rgb(144, 144, 181);
-  padding: 0.3rem;
-  font-size: smaller;
-  margin: auto;
-  margin-left: 0;
-  outline-color:#212429;
-  outline-style:solid;
+.button-notsaved {
+  height: 25px;
 }
 
-.add-button:hover {
-  color: rgb(192, 188, 231);
-  outline-color: rgb(86, 76, 107);
-  background-color: rgb(126, 117, 146)
-}
-
-.buttons {
-  background-color: rgb(182, 182, 210);
-  display: flex;
-  gap: 1rem;
-  padding-bottom: 0.4rem;
-  padding-left: 0.3rem;
-  margin: 1rem;
-  padding-left: 0.3rem;
+.button-notsaved:hover {
+  color: rgb(86, 76, 107)
 }
 
 /* Page content display (movies and filter boxes) =================================== */
@@ -132,6 +129,10 @@ body {
   padding-bottom: 1.5rem;
   margin-bottom: 1.5rem;
   width: clamp(200px, 92%, 400px);
+  border-radius: 0.2rem;
+  outline-color:rgb(255, 255, 255);
+  outline-style: groove;
+  outline-width: 0.2rem;
 }
 
 /* Favorites list ============================================ */
