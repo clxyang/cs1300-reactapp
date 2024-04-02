@@ -8,28 +8,28 @@ function App() {
   const [allMovies] = useState(movieData);
   const [favorites, setFavorites] = useState([]);
 
-  const addFavorite = (movie) => {
+  const handleFavorite = (movie) => {
     console.log('adding to fav: ', movie.name)
-    const isFavorited = favorites.some(item => item.name === movie.name); // check if it's already in the list
+    const isFavorited = favorites.some(item => item.name == movie.name); // check if it's already in the list
     
     if (!isFavorited) {
+        movie.isFavorited = true;
         setFavorites([...favorites, movie]);
+        
+    } else {
+      const removedList = favorites.filter(item => item.name !== movie.name);
+      movie.isFavorited = false;
+      setFavorites(removedList);
     }
-
-    // TODO: disable favorite button instead of having the check?
   };
 
-  const removeFavorite = (movieName) => {
-    const removedList = favorites.filter(item => item.name !== movieName);
-    setFavorites(removedList);
-  };
 
   return (
     <div className="App">
       <h1 className="app-name">
         Streamify
       </h1>
-      <Filter allMovies={allMovies} onClick={addFavorite}></Filter>
+      <Filter allMovies={allMovies} handleFav={handleFavorite}></Filter>
 
 
     </div>

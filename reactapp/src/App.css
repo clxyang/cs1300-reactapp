@@ -35,12 +35,15 @@ body {
 /* Movie cards =================================== */
 
 .movie-item {
-  margin: 1.55rem;
+  margin: 1.25rem;
   width: clamp(225px, 25%, 260px);
-  height: 360px;
-  justify-content: center;
+  height: 370px;
   background-color: rgb(182, 182, 210);
   border-radius: 0.5rem;
+}
+
+.movie-content {
+  height: 300px;
 }
 
 .movie-photo {
@@ -52,7 +55,7 @@ body {
 
 .sub-item {
   margin: 1rem;
-  padding-left: 0.5rem;
+  padding-left: 0.3rem;
 }
 
 .play-icon {
@@ -80,11 +83,11 @@ body {
 }
 
 .buttons {
+  background-color: rgb(182, 182, 210);
   display: flex;
   gap: 1rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0.5rem;
-  align-items: left;
+  padding-bottom: 0.4rem;
+  padding-left: 0.3rem;
 }
 
 /* Page content display (movies and filter boxes) =================================== */
