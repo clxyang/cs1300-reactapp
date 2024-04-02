@@ -7,6 +7,7 @@ import { Filter } from './components/FilterBox';
 function App() { 
   const [allMovies] = useState(movieData);
   const [favorites, setFavorites] = useState([]);
+  const [favCount, setFavCount] = useState(0);
 
   const handleFavorite = (movie) => {
     console.log('adding to fav: ', movie.name)
@@ -15,11 +16,13 @@ function App() {
     if (!isFavorited) {
         movie.isFavorited = true;
         setFavorites([...favorites, movie]);
+        setFavCount(favCount+1)
         
     } else {
       const removedList = favorites.filter(item => item.name !== movie.name);
       movie.isFavorited = false;
       setFavorites(removedList);
+      setFavCount(favCount-1)
     }
   };
 
@@ -27,10 +30,18 @@ function App() {
   return (
     <div className="App">
       <h1 className="app-name">
-        Streamify
+        streamify
       </h1>
       <Filter allMovies={allMovies} handleFav={handleFavorite}></Filter>
-
+      
+      <div className="favorites-section">
+        <h2 className="favorites-title">Your list ({favCount} movies)</h2>
+        <div className="movie-list">
+          {favorites.map(movie => (
+              <MovieCard key={movie.id} item={movie} isFavorited={true} handleFav={handleFavorite}/>
+          ))}
+        </div>
+      </div>
 
     </div>
   );

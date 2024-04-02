@@ -94,7 +94,7 @@ export function Filter( { allMovies, handleFav } ) {
             {/* MOVIE CARD DISPLAY */}
             <div className="movie-list">
                 {filteredMovies.map(movie => (
-                    <MovieCard key={movie.id} item={movie} isFavorited={false} handleFav={handleFav}/>
+                    <MovieCard key={movie.id} item={movie} isFavorited={movie.isFavorited} handleFav={handleFav}/>
                 ))}
             </div>
 
@@ -180,7 +180,7 @@ export function Filter( { allMovies, handleFav } ) {
                             checked={rankOption == 'name'}
                             onChange={() => setRankOption('name')}
                         />
-                        <span className="ml-2">Movie name</span>
+                        <span className="ml-2">Movie name (default)</span>
                     </div>
                     <div>
                         <input

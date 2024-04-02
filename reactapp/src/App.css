@@ -114,3 +114,17 @@ body {
   margin-bottom: 1.5rem;
   width: clamp(200px, 92%, 400px);
 }
+
+/* Favorites list ============================================ */
+
+.favorites-section {
+  background-color:rgb;
+  width: auto;
+  margin: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.favorites-title {
+  color: white;
+  text-align: center;
+}
