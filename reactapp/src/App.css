@@ -42,6 +42,7 @@ body {
   height: 230px;
   background-color: rgb(182, 182, 210);
   border-radius: 0.2rem;
+  border-style: groove;
 }
 
 .image-content {
