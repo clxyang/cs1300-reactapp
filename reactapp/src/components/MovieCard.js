@@ -25,12 +25,15 @@ export function MovieCard( { item, isFavorited, handleFav } ) {
 
   return (
     <div className="movie-item">
-      <div className="movie-content">
+      <div className="image-content">
         <img className="movie-photo" src={item.image}></img>
-        <h3 className="sub-item"> {item.name} </h3>
-        <p className="sub-item"> {item.genre} • {item.rating}/10 IMDb </p>
+        <div className="text-overlay">
+          <h3 className="sub-item"> {item.name} </h3>
+        </div>
       </div>
-      <div className="buttons sub-item">
+      <p className="sub-item"> {item.genre}</p>
+      <p className="sub-item"> {item.rating}/10 IMDb </p>
+      <div className="buttons">
           <a className="play-link"> <FontAwesomeIcon className="play-icon" icon={faCirclePlay} /> </a>
           {handleFavButton()}
       </div>

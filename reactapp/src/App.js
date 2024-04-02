@@ -32,6 +32,7 @@ function App() {
       <h1 className="app-name">
         streamify
       </h1>
+      <h2 className="favorites-title">Browse Movies For You</h2>
       <Filter allMovies={allMovies} handleFav={handleFavorite}></Filter>
       
       <div className="favorites-section">
